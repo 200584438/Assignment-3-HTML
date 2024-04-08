@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Adjust font family as needed */
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.container {
+    max-width: 800px; /* Adjust container width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.college {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.college img {
+    width: 300px; /* Adjust image width as needed */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for images */
+}
+
+.collegeName {
+    position: absolute;
+    bottom: 5px; /* Adjust to position the name vertically */
+    left: 50%; /* Adjust to horizontally center the name */
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    padding: 5px 10px; /* Padding around the name */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size */
+}
+
+.description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color for description */
+    border-radius: 10px; /* Rounded corners for description */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for description */
+    z-index: 1000; /* Ensure description appears above other elements */
+    display: none; /* Initially hidden */
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.description button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+    outline: none;
+}
+
+.description button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
